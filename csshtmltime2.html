@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Emblema+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Oppgave200325</title>
+    <style>
+      * {
+        font-family: Poppins, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        style: bold;
+        color: gray;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      /* Containeren for bildene */
+      .image-container {
+        display: flex;
+        gap: 20px; /* Avstand mellom bildene */
+        justify-content: center; /* Sentraliserer innholdet horisontalt */
+        align-items: center; /* Sentraliserer innholdet vertikalt */
+        padding: 20px;
+      }
+
+      /* Stil for hvert bilde, f.eks. med samme størrelse */
+      .img2 {
+        width: 400px; /* Fast bredde */
+        height: 300px; /* Fast høyde */
+        border: 2px solid rgb(255, 255, 255);
+        padding: 10px;
+        object-fit: cover; /* Sørger for at bildet fyller rammen uten forvrengning */
+      }
+
+      .text1 {
+        color: gray;
+      }
+
+      .text1:hover {
+        color: black;
+      }
+
+      li {
+        display: inline;
+        padding: 10px;
+        color: darkgray;
+        style: bold;
+      }
+
+      li:hover {
+        color: rgb(75, 75, 75);
+      }
+
+      li:active {
+        background-color: rgb(122, 122, 122);
+      }
+
+      #head1 ul li a:link,
+      #head1 ul li a:visited,
+      #head1 ul li a:active {
+        color: rgb(74, 74, 74);
+        text-decoration: none;
+      }
+
+      #head1 {
+        background-color: lightgray;
+        padding: 10px;
+        margin: 0;
+        text-align: right;
+        max-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="head1">
+      <ul style="font-size: 15px">
+        <li><a href="" title="link1">Hjem</a></li>
+        <li><a href="" title="link2">About</a></li>
+        <li><a href="" title="link3">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <h1>Bildeserie</h1>
+
+      <div class="image-container">
+        <img class="img2" src="img1.jpg" alt="img1" /><img
+          class="img2"
+          src="img2.jpg"
+          alt="img2"
+        /><img class="img2" src="img3.jpg" alt="img3" />
+      </div>
+    </main>
+    <footer>
+      <a href
+        ><p><span class="text1">test@test.com</span></p></a
+      >
+    </footer>
+  </body>
+</html>
